@@ -7,8 +7,6 @@ module Edition::Publishing
     validates :major_change_published_at, presence: true, if: :published?
     validate :change_note_present!, if: :change_note_required?
 
-    attr_accessor :skip_virus_status_check
-
     scope :significant_change, -> { where(minor_change: false) }
   end
 
