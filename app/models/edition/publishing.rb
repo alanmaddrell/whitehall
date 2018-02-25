@@ -53,10 +53,6 @@ module Edition::Publishing
     end
   end
 
-  def virus_check_required?
-    allows_attachments? && published? && !skip_virus_status_check
-  end
-
   def build_unpublishing(attributes = {})
     super(attributes.merge(slug: slug, document_type: type))
   end
