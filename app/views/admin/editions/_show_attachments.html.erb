@@ -3,7 +3,6 @@
   <tr class="table-header">
     <th>Title</th>
     <th>Filename</th>
-    <th></th>
   </tr>
 </thead>
 <% @edition.attachments.each do |attachment| %>
@@ -12,7 +11,6 @@
       <%= attachment.title %>
     </td>
     <td class="attachment-filename"><%= link_to_attachment(attachment, preview: !@edition.published?, truncate: @edition.imported?, full_url: true) %></td>
-    <td class="virus-status"><%= attachment_virus_status(attachment) %></td>
     <!--<td><%= attachment_metadata_tag(attachment) %></td>-->
   </tr>
 <% end %>

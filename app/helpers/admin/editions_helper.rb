@@ -227,9 +227,6 @@ module Admin::EditionsHelper
     end
   end
 
-  def attachment_virus_status(attachment)
-  end
-
   def attachment_metadata_tag(attachment)
     labels = {
       isbn: 'ISBN',
