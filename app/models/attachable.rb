@@ -36,10 +36,6 @@ module Attachable
     attachments << attachment
   end
 
-  def valid_virus_state?
-    true
-  end
-
   def allows_attachments?
     true
   end
